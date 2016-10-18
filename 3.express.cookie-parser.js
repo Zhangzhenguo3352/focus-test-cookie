@@ -1,7 +1,7 @@
 var express = require('express');
 var cookieParser = require('cookie-parser');
 var app = express();
-
+app.listen(3002)
 // cookie-parser  方式判断是，来过 还是没有来过
 	app.use(cookieParser()) // 这时候就多了两个 属性
 
@@ -16,4 +16,3 @@ var app = express();
 			res.send('欢迎新朋友')
 		}
 	})
-	app.listen(3002)
